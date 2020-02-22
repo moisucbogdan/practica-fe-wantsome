@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<head>
+    <title>TemaS2P2Punctul 1</title>
+</head>
+
+<body>
+    <form>
+        <div><label for="username">Nume:</label></div<br>
+            <div><input type="text" id="username" name="username" required></div>
+            <br>
+            <div><label for="username">Prenume:</label></div>
+            <input type="text" id="username" name="username" required>
+            <br>
+            <br>
+            <div><label for="username">Email:</label></div>
+            <div><input type="text" id="username" name="username" required></div>
+            <br>
+            <div><label for="Sex">Sex:</label></div>
+            <input type="radio" name="gender" value="Alege" checked><label for="Sex">Alege</label>
+            <input type="radio" name="gender" value="Masculin"><label for="Sex">Masculin</label>
+            <input type="radio" name="gender" value="Feminin"><label for="Sex">Feminin</label>
+            <br>
+            <br>
+            <div><label for="age">Varsta:</label><br><input type="number" id="age" name="age" min="18" max="85"></div>
+            <br>
+            <div><label for="Country">Tara:</label><br><select id="Country" name="Countrylist" form="Countryform">
+                    <option value="SelectCountry">Selecteaza Tara</option>>
+                    <option value="Romania" selected>Romania</option>>
+                    <option value="Germania">Germania</option>>
+                    <option value="Franta">Franta</option>>
+                </select></div>
+            <br>
+            <div><label for="City">Oras:</label><br><select id="City" name="Citylist" form="Cityform">
+                    <option value="SelectCity">Selecteaza Orasul</option>>
+                    <option value="Iasi" selected>Iasi</option>>
+                    <option value="Bucuresti">Bucuresti</option>>
+                    <option value="Frankfurt">Frankfurt</option>>
+                </select></div>
+            <br>
+            <div><label for="Address">Adresa:</label></div>
+            <input type="text" id="Address" name="Address">
+            <br>
+            <br>
+            <div><label for="PostalCode">Cod Postal:</label></div>
+            <div><input type="number" id="PostalCode" name="PostalCode"></div>
+            <br>
+            <div><label for="Email">Email:</label></div>
+            <div><input type="text" id="Email" name="Email"></div>
+            <br>
+            <div><label for="Mesaj">Mesaj</label></div>
+            <div><textarea name="mesaj" rows="10" cols="30" placeholder="Scrieti Mesaj"></textarea></div>
+            <br>
+            <div><label for="CV">Selecteaza CV:</label></div>
+            <div><input type="file" id="CV" name="CV" accept="file_extension|audio/*|video/*|image/*|media_type"></div>
+            <br>
+            <input type="submit" value="Trimite">
+            <input type="reset" VALUE="Reseteaza">
+    </form>
+</body>
