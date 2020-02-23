@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>TemaS2P2Punctul2</title>
+</head>
+
+<body>
+    <h1>Travel Reservation form</h1>
+    <h3>*denotes mandotory</h3>
+    <form>
+        <div><label for="name">Full name*:</label></div<br>
+            <div><input type="name" id="name" name="name" required placeholder="FirstName LastName "></div>
+            <br>
+            <div><label for="username">Email address*:</label></div>
+            <input type="email" id="email" name="email" required placeholder="Email_Address">
+            <br>
+            <br>
+            <div><label for="text">Select Tour Package*:</label></div<br>
+                <br>
+                <div><select id="SelectTourPackage" name="SelectTourPackage" form="SelectTourPackage" required>
+                        <option value="SelectTourPackage">Goa</option>
+                        <option value="SelectTourPackage">Net</option>
+                    </select>
+                </div>
+                <br>
+                <div><label for="arrivaldate">Arrival date*:</label></div>
+                <input type="arrivaldate" id="arrivaldate" name="arrivaldate" required placeholder="d/m/y" required>
+                <br>
+                <br>
+                <div><label for="text">Number of persons*:</label></div>
+                <div><input type="text" id="text" name="text" required placeholder="UNKNOWN_TYPE" required></div>
+                <br>
+                <div><label for="text">What would you want to avail?*</label></div>
+                <input type="checkbox" name="choose" value="Boarding" ><label for="choose">Boarding</label><br>
+                <input type="checkbox" name="choose" value="Fooding" ><label for="choose">Fooding</label><br>
+                <input type="checkbox" name="choose" value="Sight seeing" ><label for="choose">Sight seeing</label><br>
+                <br>
+                <div><label for="text">Discount Coupon code:</label></div>
+                <div><input type="text" id="text" name="text" required placeholder="UNKNOWN_TYPE"></div>
+                <br>
+                <div><label for="text">Terms and conditions*</label></div>
+                <input type="radio" id="Terms" name="conditions" required>
+                <label for="text">I agree</label>
+                <input type="radio" id="Terms" name="conditions" required>
+                <label for="text">I disagree</label>
+                <br>
+                <br>
+                <input type="submit" value="Complete reservation">
+
+                
+
+
+    </form>
+</body>
+
+</html>
