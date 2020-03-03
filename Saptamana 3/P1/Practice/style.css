@@ -1,0 +1,42 @@
+p {
+    color: red;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+.main{
+    font-family: Arial;
+}
+
+#title{
+    text-decoration: underline;
+}
+
+a[href] {
+    text-decoration: none;
+}
+
+a[href="https://wantsome.ro"]{
+    color: green;
+}
+
+a[title="External link"] {
+    font-style: italic;
+}
+
+a:hover{ 
+    color: red;
+    font-size: 40px; 
+}
+
+a:last-child:focus {
+    text-decoration: underline;
+}
+
+footer::after {
+ content: "Continutul adagaugat in css";
+ background-color: greenyellow;
+}
+
