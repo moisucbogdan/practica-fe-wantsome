@@ -1,0 +1,38 @@
+html {
+    height: 3000px;
+}
+.container {
+    border: solid 1px blue;
+}
+
+ul a{
+    color: magenta;
+}
+ul {
+    color: magenta;
+}
+nav {
+    border: 1px magenta solid;
+    float: left;
+    width: 200px;    
+}    
+
+.section1 {
+    border: 1px orange solid;
+    margin-left: 200px;   
+}
+.section2 {
+        border: 1px orange solid;
+        margin-left: 200px;
+}
+.section3 {
+    border: 1px orange solid;
+    margin-left: 200px;   
+}
+
+footer{
+    border: 1px green solid;
+    width: 100%;
+    background-color: greenyellow;
+      
+}
