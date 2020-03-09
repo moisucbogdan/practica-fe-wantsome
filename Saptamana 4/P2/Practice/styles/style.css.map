@@ -1,0 +1,13 @@
+{
+    "version": 3,
+    "mappings": "AAKA,AAAA,IAAI,CAAC;EACD,UAAU,EINP,OAAO;EJOV,WAAW,EAAE,SAAS;CAGzB",
+    "sources": [
+        "style.scss",
+        "_mixins.scss",
+        "_nesting.scss",
+        "_operators.scss",
+        "_variables.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+}

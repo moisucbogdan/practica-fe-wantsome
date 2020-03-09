@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+       title
+    </title>
+    <link rel="stylesheet" href="./styles/style.css" />
+</head>
+<body>
+    <form>
+
+        <p>Gender</p>
+        <input type="radio" name="game" value="Male">Male
+        <label for="Male"></label>
+        <input type="radio" name="game" value="Female">Female
+        <label for="Female"></label>
+        <input type="radio" name="game" value="Both">Both
+        <label for="Both"></label>
+        <br>
+        First name: <div><input type="text" name="First name"></div>
+        <br>
+        Last name: <div><input type="text" name="Last name"></div>
+        <br>
+        Email: <div><input type="text" name="Email"></div>
+        <br>
+        <label for="phone">Enter your phone number:</label>
+        <br>
+        <input type="tel" name="phone">
+        <br>
+        <br>
+        <label for="pwd">Password:</label><br>
+        <input type="password" id="pwd" name="pwd">
+        <br>
+        <br>
+        <label for="City">City:</label>
+        <br>
+        <select id="stateSelect" onchange="stateSelected();" class="selector">
+            <option value="IasiCity">Iasi</option>
+            <option value="BucurestiCity">Bucuresti</option>
+            <option value="ConstantaCity">Constanta</option>
+        </select>
+        <br>
+        <br>
+        <input type="checkbox" id="Terms-and-condition" name="Terms-and-condition"
+            value="I agree to the terms and conditions">
+        <label for="Terms-and-condition"> I agree to the terms and conditions</label><br>
+        <br>
+        <input type="submit" value="Sing up">
+        <input type="reset" value="Reset Form">
+        <label for=”persoana”>Person:</label>
+        <input type="text" name="persoana" id=”persoana” placeholder=”Nume persoana”>
+    </form>
+</body>
+
+</html>
