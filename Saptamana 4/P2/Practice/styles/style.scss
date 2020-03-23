@@ -5,7 +5,14 @@
 
 body {
     background: $blue;
-    font-family: Helvetica;
+    font-family: $font-stack;
+    @include flexCenter();
     
+    p{
+      font-size:  $p; 
+    }
 
+    .fname {
+        color: $fname;
+    }
 }
