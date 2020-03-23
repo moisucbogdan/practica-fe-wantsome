@@ -1,0 +1,380 @@
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+@mixin  color1{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+$redo:rgba(207, 65, 46, 0.835);
+$redx:rgba(195, 60, 43, 0.061);
+$red: rgb(200, 68, 50);
+$lightgrey: rgb(57, 59, 71);
+$darkgrey: rgb(43, 46, 55);
+    
+@media all
+  and (min-device-width: 320px) {
+
+.body{
+    margin: 0;
+    width: 100%;
+}
+.image {
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background: url(https://images.hdqwalls.com/wallpapers/city-blurred-hd.jpg);
+    background-size: 600px;
+    height: 520px;  
+}
+.content{
+    z-index: -2;
+    height: 420px;
+    background-color: $redo;
+    display: grid;   
+}
+.handPhone{
+    position: absolute;
+    z-index: -1;
+    left: 50px;
+    top: 230px;
+}
+.photophone{
+    
+    width: 150px;
+}
+.logo{
+    margin: 0;
+    @include center();  
+} 
+.intro{
+    @include center();
+    @include color1();
+    font-size: 1px;
+    margin: 0;
+}
+.tiny{
+    @include center();
+    @include color1();
+    font-size: 30px;
+    margin: 0px;
+}
+.icons{
+   @include center();
+   @include color1();
+   font-size: 10px;
+   margin-top: 10px;
+}
+.icon{
+    margin-right: 10px;
+}
+.down{
+    display: flex;
+    flex-direction: column;
+    @include color1();
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    
+}
+.textFront{ 
+    margin-left: 20px;
+    margin-right: 40px;
+    text-align: center;
+}
+.text{
+    display: none;
+}
+.buttons{
+    display: flex;
+    margin-bottom: 30px;
+}
+.section2{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    font-family: cursive;
+}
+.footer2{
+    background: $red;
+    color:white;
+    font-size: 60px;
+    text-align: center;
+}
+.chart , .user , .file{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;   
+}
+h1{
+    font-size: 20px;
+}
+h2{
+    font-size: 15px;
+}
+h3{
+    font-size: 7px;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+.fa-chart-bar , .fa-user , .fa-file-alt{
+    border-radius: 30px;
+    border-style: solid;
+    border-color: $red;
+    background-color: $red;
+    color: white;
+}
+.section3 , .section5{
+    background-color: $lightgrey
+    
+}
+.sec3T{
+    margin: 0;
+    font-size: 100px;
+    text-align: center;
+}
+.fa-pen , .fa-bars{
+    border-style: solid;;
+    border-color: $red;
+    color: white;
+    background-color: $red;
+    font-size: 50px;
+}
+.s3title , .subT , .sicon , .s3phone , .section6{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+.subT{
+    font-size: 50px ;
+    text-align: center;
+    font-size: 30px;
+}
+.scontent{
+    margin-right: 30px;
+    margin-left: 30px;
+}
+.s4menu{
+    padding-top: 20px;
+}
+.sphone{
+    width: 100%;
+
+}
+.s3Photo {
+    margin: 0;
+}
+.section3 , .section5{
+    color: white;
+}
+.section4{
+    background-color: $darkgrey;
+    color: white;
+}
+.s5locat{
+    padding-top: 20px;
+    color: $red;
+    font-size: 50px;
+
+}
+.section6{
+    background-color: $red;
+    @include color1();
+}
+.s6title{
+    font-size: 70px;
+    text-align: center;
+}
+.form{
+    margin-left: 20px;
+    margin-right: 20px;
+    font-weight: lighter;
+}
+input[type=text] , input[type=email], textarea{
+    width: 300px;
+}
+.submit{
+    @include color1();
+    text-align:start;
+    background-color: rgba(24, 23, 23, 0.274);
+    border: rgba(128, 128, 128, 0);
+    width: 50px;
+}
+footer{
+    text-align: center;
+    font-size: 1px;
+    color: $red;
+}
+h4{
+    margin: 0;
+    margin-bottom: 0;
+}
+@media all
+  and (min-device-width: 768px) {
+
+.text{
+    display: inline;
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-size: 15px;
+}
+h3{
+    margin-left: 150px;
+    margin-right: 150px;
+    text-align: center;
+}
+@media all
+  and (min-width: 1024px) {
+
+.content{
+    background-color: $redx;
+}
+
+.image{
+    background-size: 100%;
+}
+.down{
+    margin-left: 500px;
+}
+.handPhone{
+    left: 200px;
+}
+.photophone{
+    
+    width: 300px;
+}
+.section2{
+    flex-direction: row;
+    justify-content: space-around;
+    border-top: 10px;
+    border-style: solid;
+    border-color: $red;     
+}
+.section3{
+    display: grid;
+    grid-template-columns: repeat(12 , 3fr);
+    grid-template-rows: repeat(7 , 10vw);
+}
+.s3title{
+    font-size: 80px;
+}
+.sec3{
+    grid-column-start: 3;
+    grid-column-end: 10;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.s3pen{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    
+}
+.section3second{
+    grid-column-start: 3;
+    grid-column-end: 6;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    text-align: start;
+}
+.section3third{
+    grid-column-start: 3;
+    grid-column-end: 8;
+    grid-row-start: 4;
+    grid-row-end: 8;
+}
+.s3Photo{
+    grid-column-start: 7;
+    grid-column-end: 13;
+    grid-row-start: 2;
+    grid-row-end: 6;
+}
+.sp3{
+    width: 800px;
+}
+.section4{
+    display: grid;
+    grid-template-columns: repeat(12 , 3fr);
+    grid-template-rows: repeat(7 , 10vw);
+}
+.s4menu{
+    grid-column-start: 7;
+    grid-column-end: 8;
+    grid-row-start: 3;
+    grid-row-end: 4;    
+}
+.s4first{
+    grid-column-start: 8;
+    grid-column-end: 11;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    text-align: start;
+}
+.s4second{
+    grid-column-start: 8;
+    grid-column-end: 12;
+    grid-row-start: 4;
+    grid-row-end: 8;
+}
+.s4photo{
+    grid-column-start: 1;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 6;
+}
+.sp4{
+    width: 800px;
+}
+.section5{
+    display: grid;
+    grid-template-columns: repeat(12 , 3fr);
+    grid-template-rows: repeat(7 , 10vw);
+}
+.s5first{
+   grid-column-start: 3;
+   grid-column-end: 10;
+   grid-row-start: 1;
+   grid-row-end: 2;
+}
+
+.s5locat{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.s5first{
+    grid-column-start: 3;
+    grid-column-end: 6;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    text-align: start;
+}
+.s5second{
+    grid-column-start: 3;
+    grid-column-end: 8;
+    grid-row-start: 4;
+    grid-row-end: 8;
+}
+.s5photo{
+    grid-column-start: 8;
+    grid-column-end: 13;
+    grid-row-start: 2;
+    grid-row-end: 5;
+}
+.sp5{
+    width: 600px;
+}
+
+}
