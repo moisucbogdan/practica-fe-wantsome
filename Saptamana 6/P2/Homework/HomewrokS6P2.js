@@ -1,12 +1,3 @@
-//  function personalId (CNP) {
-//     if (CNP < 1999999999999 && CNP >1000000000000){
-//         return "Persoana verificata este de sex M"
-//     } else if (CNP > 2000000000000 && CNP < 2999999999999){
-//         return "Persoana verificata este de sex F"
-//     }
-// }
-// console.log(personalId(1920128226725))
-
 /*
 Input the CNP number.
 If the first number of the CNP is 1 print "Persoana verificata este de sex M"
@@ -98,23 +89,23 @@ var auto = function (brand) {
         case 'Dacia':
             var country = 'Romania';
             return 'Marca ' + brand + ' se produce in ' + country + '.';
-    } switch (brand) {
+            break;
         case 'Audi':
             var country = 'Germania';
             return 'Marca ' + brand + ' se produce in ' + country + '.';
-    } switch (brand) {
+            break;
         case 'Mitsubishi':
             var country = 'Japonia';
             return 'Marca ' + brand + ' se produce in ' + country + '.';
-    } switch (brand) {
+            break;
         case 'Rover':
             var country = 'UK';
             return 'Marca ' + brand + ' se produce in ' + country + '.';
-    } switch (brand) {
+            break;
         case 'Ford':
             var country = 'America';
             return 'Marca ' + brand + ' se produce in ' + country + '.';
-    } switch (brand) {
+            break;
         case 'Peugeot':
             var country = 'Franta';
             return 'Marca ' + brand + ' se produce in ' + country + '.';
@@ -149,8 +140,8 @@ Input an Array that it will sort in ascending oder based on salary value.
         { name: "Danny", salary: 30500 },
         { name: "Bekker", salary: 15000 }
     ];
-   var sorting = cars.sort(function(a, b){
-       return a.salary - b.salary;
-   });
-   console.log(cars);
+    var sorting = cars.sort(function (a, b) {
+        return a.salary - b.salary;
+    });
+    console.log(cars);
 })();
